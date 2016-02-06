@@ -1,0 +1,5 @@
+docker run -d \
+  --net=host \
+  --name=consul \
+  progrium/consul:latest \
+  -server -bootstrap-expect 1 -ui-dir /ui
