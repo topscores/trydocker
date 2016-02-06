@@ -1,0 +1,2 @@
+docker run -d --name=box1 --net=multihost nginx
+docker run -d --name=box2 --net=multihost nginx
