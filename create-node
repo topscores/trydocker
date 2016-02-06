@@ -1,0 +1,11 @@
+docker-machine create -d openstack \
+  --openstack-ssh-user=debian \
+  --openstack-flavor-name="Small OS" \
+  --openstack-image-name="Debian-8.3"  \
+  --engine-install-url=http://128.199.125.31  \
+  --engine-opt cluster-store=consul://$(docker-machine ip consul):8500 \
+  --engine-opt cluster-advertise=eth0:2376 \
+  --swarm \
+  --swarm-discovery consul://$(docker-machine ip consul):8500/discovery \
+  node-1
+
