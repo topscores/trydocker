@@ -2,4 +2,4 @@ docker-machine create -d openstack \
 --openstack-ssh-user=debian \
 --openstack-flavor-name="Small OS" \
 --openstack-image-name="Debian-8.3" \
---engine-install-url=http://128.199.125.31 default
+--engine-install-url=http://128.199.125.31 consul

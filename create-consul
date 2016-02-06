@@ -3,3 +3,4 @@ docker run -d \
   --name=consul \
   progrium/consul:latest \
   -server -bootstrap-expect 1 -ui-dir /ui
+
