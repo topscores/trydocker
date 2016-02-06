@@ -1,0 +1,1 @@
+docker run -d -e constratint:node!=master nginx
